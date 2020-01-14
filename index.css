@@ -67,8 +67,10 @@ body {
 .menu {
     width: 100%;
     height: 40px;
-    background-color: red;
+    background-color: #000830;
     position: relative;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #FFFFFF;
 }
 
 .content {

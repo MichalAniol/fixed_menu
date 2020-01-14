@@ -1,15 +1,17 @@
 
 window.onload = () => {
-    const imgH = document.querySelector('.image').getBoundingClientRect().height,
-        menu = document.querySelectorAll('.menu')[0],
+    const menu = document.querySelectorAll('.menu')[0],
         guy = document.querySelectorAll('.guy')[0],
         text = document.querySelectorAll('.image .text')[0];
 
-    var menuFixed = false;
+    var imgH = document.querySelector('.image').getBoundingClientRect().height,
+        menuFixed = false;
 
     text.style.fontSize = (window.innerWidth / 24) + 'px';
     window.addEventListener("resize", () => {
         text.style.fontSize = (window.innerWidth / 24) + 'px';
+        imgH = document.querySelector('.image').getBoundingClientRect().height;
+        text.style.top = ((imgH + window.scrollY) / 2) + 'px';
     });
 
     window.addEventListener('scroll', (e) => {
