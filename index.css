@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Rubik-Regular.eot');
+    src: local('open sans extralight'), local('open-sans-extralight'), url('font/Rubik-Regular.eot?#iefix') format('embedded-opentype'), url('font/Rubik-Regular.woff2') format('woff2'), url('font/Rubik-Regular.woff') format('woff'), url('font/Rubik-Regular.ttf') format('truetype'), url('font/Rubik-Regular.svg#Barlow') format('svg');
+}
+
+:root {
+    --color_1: #006600;
+    --color_2: #001600;
+    --color_3: #000800;
+    --color_back: black;
+    --font: 'Rubik', sans-serif
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    background-color: var(--color_back);
+    color: var(--color_1);
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    background: yellow;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    position: relative;
+}
+
+.content {
+    line-height: 50px;
+    margin-left: 100px;
+}
